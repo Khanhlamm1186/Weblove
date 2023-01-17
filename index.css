@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    padding: 10px;
+}
+img{
+    width:100%;
+    border-radius: 50%;
+    image-rendering: pixelated;
+    filter: drop-shadow(0 0 5px blue);
+}
+img:hover{
+    filter: drop-shadow(0 0 15px rgb(12, 12, 97));
+
+}
+.anhlove{
+    flex:20%;
+}
+.heart{
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+    box-shadow: inset;
+    border-radius: 20px;
+}
+@media screen and (max-width: 600px) {
+    .heart{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .anhlove{
+        flex:50%;
+    }
+    h2{
+        text-align: center;
+    }
+  }
